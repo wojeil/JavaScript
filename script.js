@@ -11,7 +11,7 @@ var special =["!","@","#","$","%","^","&","*","(",")","_","+"];
 //password set up variable
 var fP = "";
 
-
+//Function for Generate
 function generatePassword() {
  //prompts and confirms added
   var nC1 = prompt("How many characters would you like to use");
@@ -24,11 +24,31 @@ function generatePassword() {
   console.log(nC2);
   console.log(nC3);
   console.log(nC4);
-  
-  
- 
- // for loop 
-  for (let index = 0; index < fP.length; index++) {
+
+  //if yes to lower case 
+  if (nC2) {
+    fP += lower
+    console.log(fP);
+  }
+  //if we want UPPER CASE
+  if (nC3){
+    fP += upper
+    console.log(fP);
+  }
+  //If we want numbers
+  if (nC4){
+    fP += number
+    console.log(fP);
+  }
+  //If we want special
+  if (nC5){
+    fP += special
+    console.log(fP);
+  }
+
+
+// for loop 
+  for (let index = 0; index < nC1.length; index++) {
 
     
     
@@ -46,3 +66,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
