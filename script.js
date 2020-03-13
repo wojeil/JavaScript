@@ -9,10 +9,14 @@ var number =["1","2","3","4","5","6","7","8","9","0",];
 var special =["!","@","#","$","%","^","&","*","(",")","_","+"];
 
 //password set up variable
-var fP = "";
-var cP = "";
+var fillP = "";
+var completeP = "";
 //Function for Generate
 function generatePassword() {
+  //to help reset password 
+  password="";
+  fillP ="";
+  completeP="";
  //prompts and confirms added
   var nC1 = prompt("How many characters would you like to use");
   var nC2 = confirm("Do you want a lower case character?");
@@ -27,34 +31,31 @@ function generatePassword() {
 
   //if yes to lower case // added .join(""); so that i can change the the array in a string 
   if (nC2) {
-    fP += lower.join("");
-    console.log(fP);
+    fillP += lower.join("");
+    console.log(fillP);
   }
   //if we want UPPER CASE
   if (nC3){
-    fP += upper.join("");
-    console.log(fP);
+    fillP += upper.join("");
+    console.log(fillP);
   }
   //If we want numbers
   if (nC4){
-    fP += number.join("");
-    console.log(fP);
+    fillP += number.join("");
+    console.log(fillP);
   }
   //If we want special
   if (nC5){
-    fP += special.join("");
-    console.log(fP);
+    fillP += special.join("");
+    console.log(fillP);
   }
 
 
 // for loop 
- // for (let index = 0; index < nC1.length; index++) {
-    //cP = fP
-
-    
-    
-  //}
-
+ for (var index = 0; index < nC1; index++) {
+    completeP += fillP[Math.floor(Math.random() * fillP.length)]; 
+}
+  return completeP;
 }
 // Write password to the #password input
 function writePassword() {
@@ -67,4 +68,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
