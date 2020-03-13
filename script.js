@@ -10,7 +10,7 @@ var special =["!","@","#","$","%","^","&","*","(",")","_","+"];
 
 //password set up variable
 var fP = "";
-
+var cP = "";
 //Function for Generate
 function generatePassword() {
  //prompts and confirms added
@@ -25,34 +25,35 @@ function generatePassword() {
   console.log(nC3);
   console.log(nC4);
 
-  //if yes to lower case 
+  //if yes to lower case // added .join(""); so that i can change the the array in a string 
   if (nC2) {
-    fP += lower
+    fP += lower.join("");
     console.log(fP);
   }
   //if we want UPPER CASE
   if (nC3){
-    fP += upper
+    fP += upper.join("");
     console.log(fP);
   }
   //If we want numbers
   if (nC4){
-    fP += number
+    fP += number.join("");
     console.log(fP);
   }
   //If we want special
   if (nC5){
-    fP += special
+    fP += special.join("");
     console.log(fP);
   }
 
 
 // for loop 
-  for (let index = 0; index < nC1.length; index++) {
+ // for (let index = 0; index < nC1.length; index++) {
+    //cP = fP
 
     
     
-  }
+  //}
 
 }
 // Write password to the #password input
