@@ -20,11 +20,13 @@ function generatePassword() {
  //Alert, prompts and confirms added
  // In the prompt below you choose how many characters you want to be in your password.
   var nC1 = prompt("How many characters would you like to use?");
-  //Th
+  //Thif "if" statement sets the limit for the minimum and maximum characters that you can use.
   if (nC1 < 8 || nC1 > 128) {
+    //If what you eneter does not fit the criteria then you will get an alert and you will return to step one.
     alert("The number you selected has to be no less than 8 characters and no greater than 128 characters. Sorry Try again!")
     return generatePassword();
   }
+  //The variables below will help you decide what kind of character you would like to have in your passsword.
   var nC2 = confirm("Do you want a lower case character?");
   var nC3 = confirm("Do you want an UPPER CASE CHARACTER?");
   var nC4 = confirm("Do you want a n1_1mber?");
