@@ -31,7 +31,7 @@ function generatePassword() {
   var nC3 = confirm("Do you want an UPPER CASE CHARACTER?");
   var nC4 = confirm("Do you want a n1_1mber?");
   var nC5 = confirm("Do you want a $pecial Character?");
-
+  // We use the consol log to make sure the character selection is working 
   console.log(nC1);
   console.log(nC2);
   console.log(nC3);
@@ -59,7 +59,7 @@ function generatePassword() {
   }
 
 
-// for loop 
+// for loop  contains a formula to loop over the arrrays that contain the characters you like to use and will place them in a string once chosen based on the number you chose on the prompt.
  for (var index = 0; index < nC1; index++) {
     completeP += fillP[Math.floor(Math.random() * fillP.length)]; 
 }
