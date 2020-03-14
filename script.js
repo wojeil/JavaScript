@@ -17,7 +17,8 @@ function generatePassword() {
   password="";
   fillP ="";
   completeP="";
- //prompts and confirms added
+ //Alert, prompts and confirms added
+ // In the prompt below you choose how many characters you want to be in your password.
   var nC1 = prompt("How many characters would you like to use?");
   if (nC1 < 8 || nC1 > 128) {
     alert("The number you slected has to be no less than 8 characters and no greater than 128 characters. Sorry Try again!")
@@ -25,8 +26,8 @@ function generatePassword() {
   }
   var nC2 = confirm("Do you want a lower case character?");
   var nC3 = confirm("Do you want an UPPER CASE CHARACTER?");
-  var nC4 = confirm("Do you want to use any numbers");
-  var nC5 = confirm("Do you want any special Characters?");
+  var nC4 = confirm("Do you want a n1_1mber?");
+  var nC5 = confirm("Do you want a $pecial Character?");
 
   console.log(nC1);
   console.log(nC2);
