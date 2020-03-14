@@ -63,6 +63,7 @@ function generatePassword() {
  for (var index = 0; index < nC1; index++) {
     completeP += fillP[Math.floor(Math.random() * fillP.length)]; 
 }
+// The return will help input the string on the screen once it has been ran in the loop.
   return completeP;
 }
 // Write password to the #password input
