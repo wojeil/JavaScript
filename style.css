@@ -15,7 +15,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #f9fbfd3b;
 }
 
 .wrapper {
@@ -79,7 +79,7 @@ header {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -87,6 +87,10 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+button:hover{
+  color: rgb(255, 4, 4);
 }
 
 button[disabled] {
