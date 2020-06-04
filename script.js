@@ -26,6 +26,7 @@ function generatePassword() {
     alert("The number you selected has to be no less than 8 characters and no greater than 128 characters. Sorry Try again!")
     return generatePassword();
   }
+
   //The variables below will help you decide what kind of character you would like to have in your passsword.
   var nC2 = confirm("Do you want a lower case character?");
   var nC3 = confirm("Do you want an UPPER CASE CHARACTER?");
