@@ -16,6 +16,9 @@ page.
 Deployment
 GitHub
 
+Try Me Live
+<a href="https://wojeil.github.io/Password-Generator/"> https://wojeil.github.io/Password-Generator/</a>
+
 Built With
 HTML5
 CSS3
